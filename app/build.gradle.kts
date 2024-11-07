@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.techkurth.app_passwordgenerator"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.techkurth.app_passwordgenerator"
@@ -32,6 +32,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    //Bibliteca do view bind para utilizar pegar o id referencia do layout da tela
+    viewBinding {
+        enable = true
     }
 }
 
