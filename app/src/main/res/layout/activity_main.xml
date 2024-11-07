@@ -19,7 +19,7 @@
         android:layout_gravity="center"/>
     
     <Button
-        android:id="@+id/btGerarSenha"
+        android:id="@+id/btGeneratePsswd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gerar Senha"
@@ -29,7 +29,7 @@
         android:layout_margin="20dp"/>
 
     <TextView
-        android:id="@+id/txtSenha"
+        android:id="@+id/txtPsswd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""

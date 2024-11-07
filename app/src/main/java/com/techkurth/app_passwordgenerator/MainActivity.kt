@@ -12,7 +12,7 @@ import kotlin.random.nextInt
 class MainActivity : AppCompatActivity() {
 
     private lateinit var biding: ActivityMainBinding
-    private val alfabeto = arrayOf(
+    private val letter = arrayOf(
         "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
         "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
     )
@@ -22,13 +22,13 @@ class MainActivity : AppCompatActivity() {
         biding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(biding.root)
 
-        biding.btGerarSenha.setOnClickListener {
+        biding.btGeneratePsswd.setOnClickListener {
 
-            val letraAleatorial1 = alfabeto.random()
-            val letraAleatorial2 = alfabeto.random()
-            val numero = Random.nextInt(1000..9999)
+            val letter1 = letter.random()
+            val letter2 = letter.random()
+            val number_code = Random.nextInt(1000..9999)
 
-            biding.txtSenha.text = "$letraAleatorial1$letraAleatorial2-$numero"
+            biding.txtPsswd.text = "$letter1$letter2-$number_code"
 
 
         }
